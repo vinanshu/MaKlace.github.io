@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <title>Products</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="history.html">History</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <h1 id="our">Our Products</h1>
+    <div id="info">
+
+        <div class="img">
+            <img src="1.webp">
+            <div class="img-desc">
+                <h4><b>Name:</b> organic double circle necklace</h4>
+                <p><b>Price:</b> ₱ 5500</p>
+                <button onclick="addToCart('organic double circle necklace', 5500)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="2.webp">
+            <div class="img-desc">
+                <h4><b>Name:</b> key necklace</h4>
+                <p><b>Price:</b> ₱ 4300</p>
+                <button onclick="addToCart('key necklace', 4300)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="3.webp">
+            <div class="img-desc">
+                <h4><b>Name:</b> camelia necklace</h4>
+                <p><b>Price:</b> ₱ 7500</p>
+                <button onclick="addToCart('camelia necklace', 7500)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="4.webp">
+            <div class="img-desc">
+                <h4><b>Name:</b> harris reed necklace</h4>
+                <p><b>Price:</b>₱ 8430</p>
+                <button onclick="addToCart('harris reed necklace', 8430)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="5.webp">
+            <div class="img-desc">
+                <h4><b>Name:</b>dainty toi et moi diamond necklace</h4>
+                <p><b>Price:</b>₱ ₱ 6650</p>
+                <button onclick="addToCart('dainty toi et moi diamond necklace', 6650)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="6.webp">
+            <div class="img-desc">
+                <h4><b>Name:</b>calista sterling silver necklace</h4>
+                <p><b>Price:</b> ₱ 4500</p>
+                <button onclick="addToCart('calista sterling silver necklace',4500)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="7.jpg">
+            <div class="img-desc">
+                <h4><b>Name:</b>butterfly necklace</h4>
+                <p><b>Price:</b> ₱ 4650</p>
+                <button onclick="addToCart('butterfly necklace',4650)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="8.jpg">
+            <div class="img-desc">
+                <h4><b>Name:</b>silver heart necklace</h4>
+                <p><b>Price:</b> ₱ 7000</p>
+                <button onclick="addToCart('silver heart necklace',7000)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="9.webp">
+            <div class="img-desc">
+                <h4><b>Name:</b>double cross me necklace</h4>
+                <p><b>Price:</b> ₱ 8200</p>
+                <button onclick="addToCart('double cross me necklace',8200)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="10.jpg">
+            <div class="img-desc">
+                <h4><b>Name:</b>solitaire lab-gown diamond necklace</h4>
+                <p><b>Price:</b> ₱ 5400</p>
+                <button onclick="addToCart('solitaire lab-gown diamond necklace',5400)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="11.webp">
+            <div class="img-desc">
+                <h4><b>Name:</b>zodiac necklace</h4>
+                <p><b>Price:</b> ₱ 3500</p>
+                <button onclick="addToCart('zodiac necklace',3500)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="12.jpg">
+            <div class="img-desc">
+                <h4><b>Name:</b>kendra scott elisa gold necklace</h4>
+                <p><b>Price:</b> ₱ 7400</p>
+                <button onclick="addToCart('kendra scott elisa gold necklace',7400)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addToCart(productName, price) {
+            localStorage.setItem('productName', productName);
+            localStorage.setItem('price', price);
+            window.location.href = 'transaction.html';
+        }
+        </script>
+        
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="history.css">
+</head>
+<body>
+    <p class="navbar-brand" href="#">MaKlace</p>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="history.html" class="active">History</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <br><br>
+    <div>
+        <h1>Transaction History</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Transaction ID</th>
+                    <th>Name</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody id="transaction-history">
+            </tbody>
+        </table>
+    </div>
+    <script src="history.js"></script>
+</html>

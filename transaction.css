@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Change font family */
+    background-color: #e0e0e0; /* Adjust background color */
+    margin: 0;
+    padding: 0;
+    background-image: url(5.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Adjust text color */
+}
+
+#transaction-info {
+    max-width: 600px; /* Increase maximum width */
+    margin: 10px auto; /* Add more margin */
+    background-color: #ffffff56;
+    padding: 30px; /* Increase padding */
+    border-radius: 15px; /* Increase border radius */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Adjust box shadow */
+}
+
+form {
+    margin-top: 30px; /* Add more margin */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* Increase margin */
+    font-weight: bold;
+    color: #555; /* Adjust text color */
+}
+
+input[type="text"] {
+    width: 100%; /* Change width to 100% */
+    padding: 10px; /* Adjust padding */
+    margin-bottom: 15px; /* Increase margin */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Increase border radius */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px; /* Adjust padding */
+    border: none;
+    border-radius: 8px; /* Increase border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e74c3c;
+}
+
+.confirmation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px; /* Adjust padding */
+    border-radius: 10px; /* Adjust border radius */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+}
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #ddd; /* Adjust border width */
+    margin-top: 30px; /* Add more margin */
+}
+
+.transaction-table th, .transaction-table td {
+    padding: 12px; /* Adjust padding */
+    text-align: left;
+    border-bottom: 2px solid #ddd; /* Adjust border width */
+}
+
+.transaction-table th {
+    background-color: #f2f2f2;
+    color: #333; /* Adjust text color */
+    font-weight: bold;
+}
+
+.collapsible-header {
+    cursor: pointer;
+    background-color: #f2f2f2;
+    padding: 12px; /* Adjust padding */
+    border: 2px solid #ddd; /* Adjust border width */
+    color: #333; /* Adjust text color */
+}
+
+.collapsible-content {
+    display: none;
+}

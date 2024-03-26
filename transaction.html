@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <link rel="stylesheet" href="transaction.css">
+    
+</head>
+<body>
+    <h1>Transaction Details</h1>
+    <div id="transaction-info">
+        <p><b>Product:</b> <span id="product-name"></span></p>
+        <p><b>Price:</b> ₱ <span id="price"></span></p>
+        <form id="payment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required><br><br>
+            <label for="amount">Amount:</label>
+            <span id="amount"></span><br><br>
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+    <script src="transaction.js">
+    </script>
+</body>
+</html>

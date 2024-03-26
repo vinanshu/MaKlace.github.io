@@ -1,0 +1,40 @@
+/* CSS for the transaction history table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 20px;
+    font-family: Arial, sans-serif; /* Change font family */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Change border color */
+    padding: 10px; /* Increase padding */
+    text-align: center; /* Center align text */
+}
+
+th {
+    background-color: #f9ebd2; /* Change background color */
+    color: #333; /* Change text color */
+    font-weight: bold; /* Make headers bold */
+}
+
+/* CSS for smooth scroll button */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #4e2804; /* Change background color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #7f4107; /* Change hover background color */
+}

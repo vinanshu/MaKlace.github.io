@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      function sendEmail() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var message = document.getElementById('message').value;
+        var subject = "Contact Request from ShoesStore Website";
+
+        var mailtoLink = "mailto:Lastimosamaryjane215@gmail.com" +
+          "?subject=" + encodeURIComponent(subject) +
+          "&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\nMessage: " + message);
+
+        window.location.href = mailtoLink;
+      }
+    </script>
+  </head>
+  <body>
+
+    <div class="contact-section">
+      <p class="navbar-brand" href="#">MaKlace</p>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html" >Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="history.html">History</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <br><br>
+      <h1>Contact Us</h1>
+      <br><br>
+      <form class="contact-form" onsubmit="sendEmail(); return false;">
+        <input type="text" id="name" class="contact-form-text" placeholder="Your name">
+        <input type="email" id="email" class="contact-form-text" placeholder="Your email">
+        <input type="text" id="phone" class="contact-form-text" placeholder="Your phone">
+        <textarea id="message" class="contact-form-text" placeholder="Your message"></textarea>
+        <input type="submit" class="contact-form-btn" value="Send">
+      </form>
+    </div>
+
+  </body>
+</html>
