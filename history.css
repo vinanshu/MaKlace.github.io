@@ -7,6 +7,10 @@ table {
     font-family: Arial, sans-serif; /* Change font family */
 }
 
+.history{
+    color: whitesmoke;
+}
+
 th, td {
     border: 1px solid #ccc; /* Change border color */
     padding: 10px; /* Increase padding */
