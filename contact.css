@@ -31,7 +31,7 @@ html, body {
 }
 
 .border {
-  width: 100px;
+  width: 100px; 
   height: 10px;
   background: #34495e; /* Used the same border color as in product.css */
   margin: 40px auto;
@@ -50,7 +50,7 @@ html, body {
   box-sizing: border-box;
   margin: 16px 0;
   border: 0;
-  background: #4e28048d; /* Used the same background color as in product.css */
+  background: white; /* Used the same background color as in product.css */
   padding: 20px 40px;
   outline: none;
   color: #000; /* Changed text color */
